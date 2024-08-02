@@ -7,6 +7,10 @@ class Command {
      this.value = value;
    }
  
+  isEqual(command) {
+    return command.commandType === this.commandType && command.value === this.value;
+  }
+
  }
  
  module.exports = Command;
